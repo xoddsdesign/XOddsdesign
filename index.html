@@ -41,7 +41,7 @@
 
 		　　//當高度小於100時，關閉區塊 
 		　　　if($this_Top > 1){
-		　　　$('#top-bar').stop().animate({top:"-600px"});
+		　　　$('#top-bar').stop().animate({top:"-6100px"});
 		　　　}
 		　　　　if($this_Top < 2){
 		　　　　$('#top-bar').stop().animate({top:"0px"});
@@ -52,34 +52,45 @@
 
 
 // image load
-					$('#container').imagesLoaded( function() {
-					  // images have loaded
-					});
-
-					// options
-					$('#container').imagesLoaded( {
-					  // options...
-					  },
-					  function() {
-					    // images have loaded
-					  }
-					);
 
 
-					$('#container').imagesLoaded()
-  .always( function( instance ) {
-    console.log('all images loaded');
-  })
-  .done( function( instance ) {
-    console.log('all images successfully loaded');
-  })
-  .fail( function() {
-    console.log('all images loaded, at least one is broken');
-  })
-  .progress( function( instance, image ) {
-    var result = image.isLoaded ? 'loaded' : 'broken';
-    console.log( 'image is ' + result + ' for ' + image.img.src );
-  });
+
+$(document).ready( function() { var container = $('#images .items'); var masonryContainer = $('#images'); 
+	container.imagesLoaded(function(){ container.fadeIn(); 
+		masonryContainer.masonry({ itemSelector : '.items', isAnimated: true, 
+	}); }); } );
+
+
+					; html-script: false ]
+ 
+<style>
+.item { width: 25%; border:1px solid black; }
+.item.w2 { width: 50%; }
+</style>
+<script type="text/javascript" src="imagesloaded.pkgd.min.js"></script>
+ 
+<script>
+$(function (){
+	var $container = $('#container');
+ 
+	//當圖片讀取完畢才執行
+	$container.imagesLoaded(function (){
+ 
+		// initialize
+		$container.masonry({
+			columnWidth: 100,
+			itemSelector: '.item',
+ 
+		})
+ 
+	});
+});
+</script>
+<div id="container">
+    <div class="item">A</div>
+    <div class="item w2">B</div>
+    <div class="item">C</div>
+</div>
 		</script>
 
 
@@ -146,6 +157,7 @@
 
 	<script src="js/masonry-docs.min.js"></script>
 	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+	<script type="text/javascript" src="imagesloaded.pkgd.min.js"></script>
 	</body>
 
 
