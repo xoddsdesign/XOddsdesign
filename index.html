@@ -30,12 +30,9 @@
 
 
 	<script src="js/masonry-docs.min.js"></script>
-
-	<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+	<script src="js/jquery-3.1.0.js"></script>
 	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-
-
-		<script type='text/javascript' src="js/jquery-1.9.1.min.js"></script>
+	<script type='text/javascript' src="js/jquery-1.9.1.min.js"></script>
 <!-- 		<script type='text/javascript'>
 			$(function(){
 			$(window).load(function(){
@@ -56,17 +53,7 @@
 
 		</script> -->
 
-		<script> 
-			$(function(){ 
-			var $container = $('#container'); 
-			$container.imagesLoaded(function(){ 
-			$container.masonry({ 
-			itemSelector : '.hero-grid__item', 
-			columnWidth : 
-						}); 
-			}); 
-			}); 
-		</script>
+		
 
 			
 	</head>
@@ -129,6 +116,21 @@
 			<div class="hero-grid__item"><img src="img/5.jpg" width=100%>Content 2</div>
 			<div class="hero-grid__item"><img src="img/5.jpg" width=100%>Content 2</div>
 		</div>
+		
+
+		<!-- 圖片預載 -->
+		<script> 
+			$(function(){ 
+			var $container = $('#container'); 
+			$container.imagesLoaded(function(){ 
+			$container.masonry({ 
+			itemSelector : '.hero-grid__item', 
+			columnWidth : 
+						}); 
+			}); 
+			}); 
+		</script>
+
 
 	</body>
 
