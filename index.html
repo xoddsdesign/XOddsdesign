@@ -41,20 +41,20 @@
 
 		　　//當高度小於100時，關閉區塊 
 		　　　if($this_Top > 1){
-		　　　$('#top-bar').stop().animate({top:"-6100px"});
+		　　　$('#top-bar').stop().animate({top:"-300px"});
 		　　　}
 		　　　　if($this_Top < 2){
 		　　　　$('#top-bar').stop().animate({top:"0px"});
 		　　　 }
 		　　　}).scroll();
 		　});
-		});
+		});</script>
 
 
-// image load
+<!-- // image load -->
 
 
-
+<script type='text/javascript'>
 $(document).ready( function() { var container = $('#images .items'); var masonryContainer = $('#images'); 
 	container.imagesLoaded(function(){ container.fadeIn(); 
 		masonryContainer.masonry({ itemSelector : '.items', isAnimated: true, 
@@ -85,13 +85,8 @@ $(function (){
  
 	});
 });
+
 </script>
-<div id="container">
-    <div class="item">A</div>
-    <div class="item w2">B</div>
-    <div class="item">C</div>
-</div>
-		</script>
 
 
 	</head>
