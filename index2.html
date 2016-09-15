@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />	
-		<link rel="stylesheet" href="css/ox2.css" media="screen">
+		<link rel="stylesheet" href="./css/ox2.css" media="screen">
 		<link rel="stylesheet" href="css/masonry-docs.css" media="screen">
 
 		<!-- Google Font -->
@@ -31,51 +31,42 @@
 		<script type='text/javascript' src="/js/jquery-1.9.1.min.js"></script>
 		<script src="/js/masonry2.min.js"></script> -->
 		</script><script src="./js/ex/jquery-1.8.1.min.js.下載"></script>
-			<script src="./js/ex/jquery.masonry.min.js.下載"></script>
-		<style>
-
-			.item {
-				width: 220px;
-				padding:10px;
-				float: left;
-			}
-			dd{
-				margin: 5px;
-			}
-			.item img{
-				width: 220px;
-				height:auto;
-			}
-			
-			#info{
-				width:50%;
-				margin:0 auto;
-				text-align:center;
-				font-family:"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", "細明體", "MingLiU", "標楷體", "DFKai-sb", Helvetica, Arial, FreeSans, sans-serif;
-				font-size:18px;
-				line-height:1.7em;
-			}
-			</style>
+		<script src="./js/ex/jquery.masonry.min.js.下載"></script>
+		\
 		</head>
 
 
 		<body>
 			<div id="info">Masonry 效果DEMO，請試著改變視窗大小看看效果。</div>
-				<div id="container" style="position: relative; height: 2103px;" class="masonry"> 
+				<div id="container" style="position: relative; height: 2000px;" class="masonry"> 
 					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
 					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/4.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/3.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/5.jpg" width=100%> </a> Content1</div>
 					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
 					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/4.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/3.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/5.jpg" width=100%> </a> Content1</div>
 					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
 					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/4.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/3.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/5.jpg" width=100%> </a> Content1</div>
 					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
 					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
-					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
-					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
-					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
-					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
-					<div class="item masonry-brick" ><img src="img/1.jpg" width=100%> </a> Content1</div>
-					<div class="item masonry-brick" ><img src="img/2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox1.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/ox2.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/4.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/3.jpg" width=100%> </a> Content1</div>
+					<div class="item masonry-brick" ><img src="img/5.jpg" width=100%> </a> Content1</div>
 					</div>
 
 
@@ -87,7 +78,7 @@
 				$container.imagesLoaded(function(){
 					$container.masonry({
 						itemSelector : '.item',
-						columnWidth : 240
+						columnWidth : 15
 					});
 				});
 			});
