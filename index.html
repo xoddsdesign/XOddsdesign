@@ -29,10 +29,15 @@
 
 
 
+	<script type='text/javascript' src="js/jquery-1.9.1.min.js"></script>
+
 	<script src="js/masonry-docs.min.js"></script>
 	<script src="js/jquery-3.1.0.js"></script>
+	<!-- imagesloadded -->
 	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-	<script type='text/javascript' src="js/jquery-1.9.1.min.js"></script>
+	<!-- lazyload -->
+	<script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+	
 <!-- 		<script type='text/javascript'>
 			$(function(){
 			$(window).load(function(){
@@ -119,7 +124,7 @@
 		
 
 		<!-- 圖片預載 -->
-		<script> 
+		<script type="text/javascript" charset="utf-8"> 
 			$(function(){ 
 			var $container = $('#container'); 
 			$container.imagesLoaded(function(){ 
@@ -132,8 +137,33 @@
 		</script>
 
 
+		<script type="text/javascript" charset="utf-8">
+	 		 $(function() {
+	   		 $("img.logo").lazyload({
+	         	effect : "fadeIn"
+	   		  });
+
+	 		 });
+ 		 </script>
+
+
+		 <script type="text/javascript" src="imagesloaded.pkgd.min.js"></script>
+		 
+		<script>
+		$(function (){
+			var $container = $('#container');
+		 
+			//當圖片讀取完畢才執行
+			$container.imagesLoaded(function (){
+		 
+				// initialize
+				$container.masonry({
+					columnWidth: 100,
+					itemSelector: '.hero-grid__item',
+		 
+				})
+		 
+			});
+		});
 	</body>
-
-
-
-	</html>
+</html>
